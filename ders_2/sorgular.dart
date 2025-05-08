@@ -62,4 +62,9 @@ void main(List<String> args) {
   bool stateOne = 12 > 5;
   bool stateTwo = 19 == 19;
   print(stateOne && stateTwo); // true dondurur
+
+  print(stateOne || stateTwo); // true dondurur
+
+  bool stateThree = "Bilal" == "bilal";
+  print(stateOne || stateThree); // true doner
 }
