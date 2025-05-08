@@ -71,26 +71,20 @@ void main(List<String> args) {
 
   //PRATIK1 - Kullanicidan iki tane sayi alin ve bu sayilari karsilastirip ekrana yazdiriniz.
   stdout.write("--HANGI SAYI DAHA BUYUKTUR OYUNUNA HOSGELDINIZ--\n1. sayiyi giriniz: ");
-  String? sayi1_text = stdin.readLineSync();
-  int sayi1 = int.parse(sayi1_text!);
+  int? sayi1 = int.parse(stdin.readLineSync()!);
 
   stdout.write("\n2. sayiyi giriniz: ");
-  String? sayi2_text = stdin.readLineSync();
-  int sayi2 = int.parse(sayi2_text!);
+  int? sayi2 = int.parse(stdin.readLineSync()!);
 
   print("Girdiginiz $sayi1 degeri $sayi2'den buyuk mu?: ${sayi1 > sayi2}");
 
 
   //PRATIK2 - Kullanicidan bir sayi isteyin sonra ikinci sayiyi isteyin. Birinci sayinin 2 katinin 5 fazlasini bulup ikinci sayi ile karsilastiriniz.
   stdout.write("\n1. sayiyi giriniz: ");
-  String? sayi3_text = stdin.readLineSync();
-  int sayi3 = int.parse(sayi3_text!);
-
+  int? sayi3 = int.parse(stdin.readLineSync()!);
   int yeni_sayi3 = sayi3*2 + 5;
 
   stdout.write("\n2. sayiyi giriniz: ");
-  String? sayi4_text = stdin.readLineSync();
-  int sayi4 = int.parse(sayi4_text!);
-
+  int? sayi4 = int.parse(stdin.readLineSync()!);
   print("Birinci sayinin 2 katinin 5 fazlasi yani $yeni_sayi3 buyuk mudur $sayi4'den? : ${yeni_sayi3 > sayi4}");
 }
