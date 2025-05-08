@@ -1,6 +1,6 @@
 import "dart:io";
 void main(List<String> args) {
-  /*int myAge = 19;
+  int myAge = 19;
 
   if(myAge >= 18)
   {
@@ -9,9 +9,9 @@ void main(List<String> args) {
   else
   {
     print("Resit degilsin!");
-  } */
+  }
 
-  /*stdout.write("Yasinizi giriniz: ");
+  stdout.write("Yasinizi giriniz: ");
   int? yas = int.parse(stdin.readLineSync()!);
 
   if(yas >= 18)
@@ -21,11 +21,11 @@ void main(List<String> args) {
   else
   {
     print("Yasiniz $yas, ehliyet alamazsiniz!");
-  }*/
+  }
 
 
-  // PRATIK1- BIRINCI VE IKINCI SAYIYI ALINIZ BU SAYILARI KARSILASTIRIP BUYUK MU KUCUK MU YAZDIRINIZ.
-  /*stdout.write("Sayi1'i giriniz: ");
+  //PRATIK1- BIRINCI VE IKINCI SAYIYI ALINIZ BU SAYILARI KARSILASTIRIP BUYUK MU KUCUK MU YAZDIRINIZ.
+  stdout.write("Sayi1'i giriniz: ");
   int? sayi1 = int.parse(stdin.readLineSync()!);
 
   stdout.write("Sayi2'i giriniz: ");
@@ -38,9 +38,9 @@ void main(List<String> args) {
   else
   {
     print("$sayi2, $sayi1'den buyuktur.");
-  }*/
+  }
   
-  /*
+  
   stdout.write("Hangi sayi buyuktur oyununa hosgeldiniz!");
   stdout.write("Birinci sayiyi giriniz: ");
   String? numberOneText = stdin.readLineSync();
@@ -57,10 +57,10 @@ void main(List<String> args) {
   else
   {
     print("$numberTwo sayisi $numberOne sayisindan buyuktur.");
-  }*/
+  }
 
 
-  /* PRATIK2: ISLEM YAPILACAK 1. SAYIYI GIRINIZ ARDINDAN 2. SAYIYI GIRINIZ, BIRINCI SAYININ 2 KATININ 5 FAZLASINI ALARAK SAYI2 ILE KARSILASTIRINIZ.
+  //PRATIK2: ISLEM YAPILACAK 1. SAYIYI GIRINIZ ARDINDAN 2. SAYIYI GIRINIZ, BIRINCI SAYININ 2 KATININ 5 FAZLASINI ALARAK SAYI2 ILE KARSILASTIRINIZ.
   stdout.write("\n1. sayiyi giriniz: ");
   int? sayi3 = int.parse(stdin.readLineSync()!);
   int yeni_sayi3 = sayi3*2 + 5;
@@ -75,25 +75,25 @@ void main(List<String> args) {
   {
     print("$sayi4 sayisi $yeni_sayi3 sayisindan buyuktur.");
   }
-  */
+  
 
-  /* PRATIK3: Belli bir kullanici adi olan sisteme kullanici ismini girecek ve sisteme giris basarili olacak eğer kabul edilmezse sisteme giremediniz kullanici adi hata desin.
-  String kayitliKullanici = "Ensar";
+  // PRATIK3: Belli bir kullanici adi olan sisteme kullanici ismini girecek ve sisteme giris basarili olacak eğer kabul edilmezse sisteme giremediniz kullanici adi hata desin.
+  String kayitliKullanici1 = "Ensar";
   stdout.write("Lutfen kullanici adini giriniz: ");
-  String? kullaniciGirdi= stdin.readLineSync()!;
+  String? kullaniciGirdi1= stdin.readLineSync()!;
 
-  if(kayitliKullanici == kullaniciGirdi)
+  if(kayitliKullanici1 == kullaniciGirdi1)
   {
-    print("Hosgeldiniz $kullaniciGirdi");
+    print("Hosgeldiniz $kullaniciGirdi1");
   }
   else
   {
     print("Yanlis kullanici adi!!");
   }
-  */
+  
 
 
-  // PRATIK4: PRATIK3 TEKI GIBI YAPINIZ EK OLARAK SIFRE KONTROLU YAPINIZ.
+  //PRATIK4: PRATIK3 TEKI GIBI YAPINIZ EK OLARAK SIFRE KONTROLU YAPINIZ.
 
   String kayitliKullanici = "Ensar";
   int kayitliSifre = 1234;
@@ -118,4 +118,18 @@ void main(List<String> args) {
   {
     print("Yanlis kullanici adi!!");
   }
+
+  // KULLANICININ GIRDIGI DEGERIN TEK MI CIFT MI OLDUGUNU SOYLEYEN PROGRAM
+
+  stdout.write("Lutfen bir sayi giriniz: ");
+  int myNumber = int.parse(stdin.readLineSync()!);
+  if(myNumber%2 == 0 )
+  {
+    print("Girdiginiz sayi yani $myNumber bir cift sayidir.");
+  }
+  else
+  {
+    print("Girdiginiz sayi yani $myNumber bir tek sayidir.");
+  }
+
 }
