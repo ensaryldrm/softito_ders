@@ -48,7 +48,7 @@ void main(List<String> args) {
 
   stdout.write("Ikinci sayiyi giriniz: ");
   String? numberTwoText = stdin.readLineSync();
-  int numberTwo = int.parse(numberOneText!);
+  int numberTwo = int.parse(numberTwoText!);
 
   if(numberOne > numberTwo)
   {
