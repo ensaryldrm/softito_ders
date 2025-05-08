@@ -34,11 +34,16 @@ void main(List<String> args) {
      
      */
   
-    int a = 17;
-    int b = 19;
-    print(a>b);
+  int a = 17;
+  int b = 19;
+  print(a>b); // false dondurur
 
-    a = 19;
-    b = 12;
-    print(a>b);
+  a = 19;
+  b = 12;
+  print(a>b); // true dondurur
+
+  var name1 = "Bilal";
+  var name2 = "Hatice";
+
+  print(name1 == name2); // false dondurur
 }
