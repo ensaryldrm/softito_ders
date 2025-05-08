@@ -25,7 +25,7 @@ void main(List<String> args) {
 
 
   // PRATIK1- BIRINCI VE IKINCI SAYIYI ALINIZ BU SAYILARI KARSILASTIRIP BUYUK MU KUCUK MU YAZDIRINIZ.
-  stdout.write("Sayi1'i giriniz: ");
+  /*stdout.write("Sayi1'i giriniz: ");
   int? sayi1 = int.parse(stdin.readLineSync()!);
 
   stdout.write("Sayi2'i giriniz: ");
@@ -38,7 +38,7 @@ void main(List<String> args) {
   else
   {
     print("$sayi2, $sayi1'den buyuktur.");
-  }
+  }*/
   
   /*
   stdout.write("Hangi sayi buyuktur oyununa hosgeldiniz!");
@@ -60,7 +60,7 @@ void main(List<String> args) {
   }*/
 
 
-  // PRATIK2: ISLEM YAPILACAK 1. SAYIYI GIRINIZ ARDINDAN 2. SAYIYI GIRINIZ, BIRINCI SAYININ 2 KATININ 5 FAZLASINI ALARAK SAYI2 ILE KARSILASTIRINIZ.
+  /* PRATIK2: ISLEM YAPILACAK 1. SAYIYI GIRINIZ ARDINDAN 2. SAYIYI GIRINIZ, BIRINCI SAYININ 2 KATININ 5 FAZLASINI ALARAK SAYI2 ILE KARSILASTIRINIZ.
   stdout.write("\n1. sayiyi giriniz: ");
   int? sayi3 = int.parse(stdin.readLineSync()!);
   int yeni_sayi3 = sayi3*2 + 5;
@@ -69,10 +69,53 @@ void main(List<String> args) {
   int? sayi4 = int.parse(stdin.readLineSync()!);
    if(sayi3 > sayi4)
   {
-    print("$sayi3 sayisi $sayi4 sayisindan buyuktur.");
+    print("$yeni_sayi3 sayisi $sayi4 sayisindan buyuktur.");
   }
   else
   {
-    print("$sayi4 sayisi $sayi3 sayisindan buyuktur.");
+    print("$sayi4 sayisi $yeni_sayi3 sayisindan buyuktur.");
+  }
+  */
+
+  /* PRATIK3: Belli bir kullanici adi olan sisteme kullanici ismini girecek ve sisteme giris basarili olacak eğer kabul edilmezse sisteme giremediniz kullanici adi hata desin.
+  String kayitliKullanici = "Ensar";
+  stdout.write("Lutfen kullanici adini giriniz: ");
+  String? kullaniciGirdi= stdin.readLineSync()!;
+
+  if(kayitliKullanici == kullaniciGirdi)
+  {
+    print("Hosgeldiniz $kullaniciGirdi");
+  }
+  else
+  {
+    print("Yanlis kullanici adi!!");
+  }
+  */
+
+
+  // PRATIK4: PRATIK3 TEKI GIBI YAPINIZ EK OLARAK SIFRE KONTROLU YAPINIZ.
+
+  String kayitliKullanici = "Ensar";
+  int kayitliSifre = 1234;
+  stdout.write("Lutfen kullanici adini giriniz: ");
+  String? kullaniciGirdi= stdin.readLineSync()!;
+
+  if(kayitliKullanici == kullaniciGirdi)
+  {
+    stdout.write("Lutfen sifreyi giriniz: ");
+    int? sifreGirdi = int.parse(stdin.readLineSync()!);
+
+    if(kayitliSifre == sifreGirdi)
+    {
+      print("Hosgeldiniz $kullaniciGirdi!");
+    }
+    else
+    {
+      print("Yanlis sifre!!");
+    }
+  }
+  else
+  {
+    print("Yanlis kullanici adi!!");
   }
 }
