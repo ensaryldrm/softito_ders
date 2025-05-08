@@ -58,4 +58,21 @@ void main(List<String> args) {
   {
     print("$numberTwo sayisi $numberOne sayisindan buyuktur.");
   }*/
+
+
+  // PRATIK2: ISLEM YAPILACAK 1. SAYIYI GIRINIZ ARDINDAN 2. SAYIYI GIRINIZ, BIRINCI SAYININ 2 KATININ 5 FAZLASINI ALARAK SAYI2 ILE KARSILASTIRINIZ.
+  stdout.write("\n1. sayiyi giriniz: ");
+  int? sayi3 = int.parse(stdin.readLineSync()!);
+  int yeni_sayi3 = sayi3*2 + 5;
+
+  stdout.write("\n2. sayiyi giriniz: ");
+  int? sayi4 = int.parse(stdin.readLineSync()!);
+   if(sayi3 > sayi4)
+  {
+    print("$sayi3 sayisi $sayi4 sayisindan buyuktur.");
+  }
+  else
+  {
+    print("$sayi4 sayisi $sayi3 sayisindan buyuktur.");
+  }
 }
