@@ -44,21 +44,22 @@ void main(List<String> args) {
 
   var name1 = "Bilal";
   var name2 = "Hatice";
-
   print(name1 == name2); // false dondurur
 
   var name3 = "Bilal";
   var name4 = "bilal";
-
   print(name3 == name4); // false dondurur
 
   var name5 = "Bilal";
   var name6 = "Bilal";
-
   print(name5 == name6); // true dondurur
 
-  bool stateOne = 12 > 5;
-  bool stateTwo = 17 == 19;
+  // bool stateOne = 12 > 5;
+  // bool stateTwo = 17 == 19;
 
-  print(stateOne && stateTwo); // false döndürür
+  // print(stateOne && stateTwo); // false dondurur
+
+  bool stateOne = 12 > 5;
+  bool stateTwo = 19 == 19;
+  print(stateOne && stateTwo); // true dondurur
 }
