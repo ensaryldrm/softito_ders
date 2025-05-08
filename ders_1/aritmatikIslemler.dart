@@ -1,5 +1,3 @@
-import 'dart:math';
-
 void main(List<String> args) {
   //+ toplama, - cikarma, * carpma, / bolme, % mod
   // Ucgenin cevresini bulan programi yaziniz
@@ -10,7 +8,7 @@ void main(List<String> args) {
   kenar3 = 10;
 
   var cevre = kenar1 + kenar2 + kenar3;
-  print("Kenar uzunlukları $kenar1, $kenar2, $kenar3 olan ucgenin cevresi: $cevre'dir.");
+  print("Kenar uzunluklari $kenar1, $kenar2, $kenar3 olan ucgenin cevresi: $cevre'dir.");
 
   var h = 12;
   var a = 15;
