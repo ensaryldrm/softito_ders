@@ -1,6 +1,6 @@
 import "dart:io";
 /* ---------------SORU3---------------
-   sonsuz döngü şeklinde işlem seçimi yapılabilip seçime göre girilen sayıları işleme sokan program. */
+  sonsuz dongu seklinde islem secimi yapilabilip secime gore girilen sayilari isleme sokan program. */
 
 void main(List<String> args)
  {

@@ -1,6 +1,6 @@
 import "dart:io";
 /* ---------------SORU2---------------
-   sonsuz döngü şeklinde kullanıcan iki sayı alın ve bu sayıları toplatın. */
+  sonsuz dongu seklinde kullanicidan iki sayi alin ve bu sayilari toplatin. */
 
 void main(List<String> args) 
 {

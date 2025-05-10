@@ -1,6 +1,6 @@
 import "dart:io";
 /* ---------------SORU4---------------
-   sonsuz döngü şeklinde geometrik şekillerde kare, dikdörgen, paralelkenar ve dairenin alanını bulan programı yazın. */
+  sonsuz dongu seklinde geometrik sekillerde kare, dikdorgen, paralelkenar ve dairenin alanini bulan programi yazin. */
 
 void main(List<String> args)
  {

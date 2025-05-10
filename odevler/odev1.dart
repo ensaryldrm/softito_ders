@@ -1,6 +1,6 @@
 import "dart:io";
 /* ---------------SORU1---------------
-   sonsuz döngü şeklinde kullanıcıdan 3 sayı alın büyük olanı ekrana yazdırın. q ya basana kadar işlem sürekli istensin */
+  sonsuz dongu seklinde kullanicidan 3 sayi alin buyuk olani ekrana yazdirin.. q ya basana kadar islem surekli istensin */
 
 void main(List<String> args) 
 {
