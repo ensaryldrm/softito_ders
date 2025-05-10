@@ -20,7 +20,7 @@ void main(List<String> args)
      sayi2 = double.parse(stdin.readLineSync()!);
      toplam = sayi1 + sayi2;
 
-     print("$sayi1 + $sayi2 = ${sayi1 + sayi2}\n");
+     print("$sayi1 + $sayi2 = $toplam\n");
     }
 
     else if(secim == "q" || secim == "Q")
