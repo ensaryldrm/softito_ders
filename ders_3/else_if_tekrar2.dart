@@ -9,7 +9,7 @@ void main(List<String> args) {
     stdout.write("$i. sayiyi giriniz: ");
     int sayi = int.parse(stdin.readLineSync()!);
 
-    if(sayi >= 0)
+    if(sayi > 0)
     {
       sayac++;
       toplam += sayi;
