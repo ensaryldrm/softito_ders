@@ -96,10 +96,31 @@ void main(List<String> args) {
     yasHesaplama(myBirthday, secim!);
   }
   */
-
-  genelIslemler();
+  // Kullacininin girdigi sayiya gore karenin alanini hesaplayan programi yaziniz.
+  genelIslemler2();
 }
 
+
+void genelIslemler2(){
+  while(true){
+    stdout.write("--Lutfen yapilacak islemi seciniz--\nKarenin alanini hesaplamak icin 1'e\nDikdortgenin alanini hesaplamak  icin 2'ye\nUcgenin alanini hesaplamak  3'e\nmutlak deger almak icin 4'e basiniz\nSecim: ");
+    String? secim = stdin.readLineSync()!;
+    
+    switch(secim){
+      case "1": kareAlan();
+                break;
+      case "2": diktortgenAlan();
+                break;
+      case "3": 
+                break;
+      case "4": 
+                break;
+      default: print("Yanlis secim yaptiniz lutfen dogru secim yapiniz!\n");
+                break;
+    }
+
+  }
+}
 
 void genelIslemler(){
  while(true){
@@ -122,6 +143,21 @@ void genelIslemler(){
                 break;
     }
   }
+}
+
+void diktortgenAlan(){
+  stdout.write("Lutfen dikdortgenin 1. kenarini giriniz: ");
+  double kenar1 = double.parse(stdin.readLineSync()!);
+
+  stdout.write("Lutfen dikdortgenin 2. kenarini giriniz: ");
+  double kenar2 = double.parse(stdin.readLineSync()!);
+  double alan = kenar1* kenar2;
+}
+void kareAlan(){
+  stdout.write("Lutfen karenin kenar uzunlugunu giriniz: ");
+    double kenar = double.parse(stdin.readLineSync()!);
+    double alan = kenar*kenar;
+    print("Kenar uzunlugu $kenar olan karenin alani: $alan");
 }
 
 void mutlakYap(int a){
