@@ -1,6 +1,5 @@
 import "dart:io";
 import "dart:core";
-import "dart:math";
 
 void main(List<String> args) {
   /*
@@ -113,7 +112,7 @@ void genelIslemler3(){
     stdout.write("Lutfen pi sayisini giriniz: ");
     String? myPi = stdin.readLineSync()!;
     if(myPi != ""){
-      double myPiDouble = double.parse(myPi!);
+      double myPiDouble = double.parse(myPi);
       daireAlan(r, myPiDouble);
     }else{
       daireAlan(r);
