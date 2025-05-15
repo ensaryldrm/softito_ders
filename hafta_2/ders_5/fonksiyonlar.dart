@@ -1,5 +1,6 @@
 import "dart:io";
 import "dart:core";
+import "dart:math";
 
 void main(List<String> args) {
   /*
@@ -99,19 +100,61 @@ void main(List<String> args) {
   genelIslemler();
 }
 
+
 void genelIslemler(){
  while(true){
     stdout.write("Lutfen bir sayi giriniz: ");
     int sayi = int.parse(stdin.readLineSync()!);
 
-    tekMiCiftMi(sayi);
+    stdout.write("--Lutfen yapilacak islemi seciniz--\ntek cift kontrolu icin 1'e\nisaret kontrolu icin 2'ye\nkok almak icin 3'e\nmutlak deger almak icin 4'e basiniz\nSecim: ");
+    String? secim = stdin.readLineSync()!;
+    
+    switch(secim){
+      case "1": tekMiCiftMi(sayi);
+                break;
+      case "2": negatifMiPozitifMi(sayi);
+                break;
+      case "3": kokAl(sayi);
+                break;
+      case "4": mutlakYap(sayi);
+                break;
+      default: print("Yanlis secim yaptiniz lutfen dogru secim yapiniz!\n");
+                break;
+    }
+  }
+}
+
+void mutlakYap(int a){
+  int pozNum = a.abs();
+  print("Girdiginiz $a sayisinin mutlak degeri $pozNum\n");
+}
+
+void kokAl(int a){
+ double kok = sqrt(a);
+ if(a >=0){
+  print("girdiginiz $a sayisinin karekoku $kok\n");
+ }
+ else{
+  print("Lutfen negatif bir sayi girmeyiniz.\n");
+ }
+}
+
+void negatifMiPozitifMi(int a){
+  if(a > 0){
+    print("Girdiginiz $a sayisi pozitif bir sayidir.\n");
+  }
+  else if(a < 0){
+    print("Girdiginiz $a sayisi negatif bir sayidir.\n");
+  }
+  else{
+    print("Girdiginiz $a sayisinin isareti yoktur.\n");
   }
 }
 
 void tekMiCiftMi(int a){
   a % 2 == 0 
-      ? print("Girdiginiz $a sayisi cift sayidir!")
-      : print("Girdiginiz $a sayisi tek sayidir!");
+      ? print("Girdiginiz $a sayisi cift sayidir!\n")
+      : print("Girdiginiz $a sayisi tek sayidir!\n");
 }
 
 /* void sayiIste(String metin){
