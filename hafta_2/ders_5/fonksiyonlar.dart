@@ -103,7 +103,7 @@ void main(List<String> args) {
 
 void genelIslemler2(){
   while(true){
-    stdout.write("--Lutfen yapilacak islemi seciniz--\nKarenin alanini hesaplamak icin 1'e\nDikdortgenin alanini hesaplamak  icin 2'ye\nUcgenin alanini hesaplamak  3'e\nmutlak deger almak icin 4'e basiniz\nSecim: ");
+    stdout.write("--Lutfen yapilacak islemi seciniz--\nKarenin alanini hesaplamak icin 1'e\nDikdortgenin alanini hesaplamak  icin 2'ye\nUcgenin alanini hesaplamak  3'e\nYamuk alani hesaplamak icin 4'e basiniz\nSecim: ");
     String? secim = stdin.readLineSync()!;
     
     switch(secim){
@@ -111,9 +111,9 @@ void genelIslemler2(){
                 break;
       case "2": diktortgenAlan();
                 break;
-      case "3": 
+      case "3": daireAlan();
                 break;
-      case "4": 
+      case "4": yamukAlan();
                 break;
       default: print("Yanlis secim yaptiniz lutfen dogru secim yapiniz!\n");
                 break;
@@ -145,6 +145,26 @@ void genelIslemler(){
   }
 }
 
+void daireAlan(){
+  stdout.write("Lutfen dairenin yaricapini giriniz: ");
+  double yariCap = double.parse(stdin.readLineSync()!);
+  double alan = pi * pow(yariCap, 2.0);
+  print("Yaricapi $yariCap olan dairenin alani: $alan");
+  
+}
+void yamukAlan(){
+  stdout.write("Lutfen ust taban uzunlugunu giriniz: ");
+  double ustTaban = double.parse(stdin.readLineSync()!);
+
+  stdout.write("Lutfen alt taban uzunlugunu giriniz: ");
+  double altTaban = double.parse(stdin.readLineSync()!);
+  
+  stdout.write("Lutfen yukseklik uzunlugunu giriniz: ");
+  double yukseklik = double.parse(stdin.readLineSync()!);
+  double alan = ((altTaban + ustTaban)*yukseklik)/2;
+  print("Verilen bilgilere gore alan: $alan");
+
+}
 void diktortgenAlan(){
   stdout.write("Lutfen dikdortgenin 1. kenarini giriniz: ");
   double kenar1 = double.parse(stdin.readLineSync()!);
@@ -152,6 +172,7 @@ void diktortgenAlan(){
   stdout.write("Lutfen dikdortgenin 2. kenarini giriniz: ");
   double kenar2 = double.parse(stdin.readLineSync()!);
   double alan = kenar1* kenar2;
+  print("Kenar uzunlukları $kenar1 - $kenar2 olan dikdortgenin alani: $alan");
 }
 void kareAlan(){
   stdout.write("Lutfen karenin kenar uzunlugunu giriniz: ");
