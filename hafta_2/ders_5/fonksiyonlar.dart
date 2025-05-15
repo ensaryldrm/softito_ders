@@ -97,11 +97,35 @@ void main(List<String> args) {
   }
   */
   // Kullacininin girdigi sayiya gore karenin alanini hesaplayan programi yaziniz.
-  genelIslemler2();
+  
+  /* genelIslemler2(); */
+
+  /* faktoriyelHesaplama(5); */
+
+  genelIslemler3();
 }
 
+void genelIslemler3(){
+  while(true){
+    
+    stdout.write("Lutfen yaricapi giriniz: ");
+    int r = int.parse(stdin.readLineSync()!);
+    stdout.write("Lutfen pi sayisini giriniz: ");
+    String? myPi = stdin.readLineSync()!;
+    if(myPi != ""){
+      double myPiDouble = double.parse(myPi!);
+      daireAlan(r, myPiDouble);
+    }else{
+      daireAlan(r);
+    }
+  }
+}
 
-void genelIslemler2(){
+void daireAlan(int yaricap, [double myPi = 3.14]){
+  double alan = yaricap * yaricap * myPi;
+  print("Sonuc: $alan");
+}
+/* void genelIslemler2(){
   while(true){
     stdout.write("--Lutfen yapilacak islemi seciniz--\nKarenin alanini hesaplamak icin 1'e\nDikdortgenin alanini hesaplamak  icin 2'ye\nUcgenin alanini hesaplamak  3'e\nYamuk alani hesaplamak icin 4'e basiniz\nSecim: ");
     String? secim = stdin.readLineSync()!;
@@ -120,8 +144,8 @@ void genelIslemler2(){
     }
 
   }
-}
-
+} */
+/* 
 void genelIslemler(){
  while(true){
     stdout.write("Lutfen bir sayi giriniz: ");
@@ -144,15 +168,23 @@ void genelIslemler(){
     }
   }
 }
+ */
 
+/* void faktoriyelHesaplama(int s){
+  int faktoriyel = 1;
+  for(int i = 1; i<=s; i++){
+    faktoriyel *= i;
+  }
+  print("Girdiginiz $s sayisinin faktoriyeli: $faktoriyel");
+}
 void daireAlan(){
   stdout.write("Lutfen dairenin yaricapini giriniz: ");
   double yariCap = double.parse(stdin.readLineSync()!);
   double alan = pi * pow(yariCap, 2.0);
   print("Yaricapi $yariCap olan dairenin alani: $alan");
   
-}
-void yamukAlan(){
+} */
+/* void yamukAlan(){
   stdout.write("Lutfen ust taban uzunlugunu giriniz: ");
   double ustTaban = double.parse(stdin.readLineSync()!);
 
@@ -212,7 +244,7 @@ void tekMiCiftMi(int a){
   a % 2 == 0 
       ? print("Girdiginiz $a sayisi cift sayidir!\n")
       : print("Girdiginiz $a sayisi tek sayidir!\n");
-}
+} */
 
 /* void sayiIste(String metin){
   stdout.write("Lutfen $metin sayi giriniz: ");
