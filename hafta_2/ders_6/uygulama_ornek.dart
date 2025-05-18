@@ -1,9 +1,9 @@
-import "dart:io";
+/* import "dart:io";
 import "dart:js_interop";
 import "dart:vmservice_io";
 
 import "../ders_5/fonksiyonlar2.dart";
-
+ */
 void main(List<String> args) {
   /*
   Bir magaza uygulamasi yapacaksiniz.
@@ -47,10 +47,10 @@ void main(List<String> args) {
     -Toplam Tutar: 1500TL urun 60TL kargo, 150TL komisyon, komisyon: 0
     */
 
-  girisEkrani();
+  /* girisEkrani(); */
 }
 
-void girisEkrani() {
+/* void girisEkrani() {
   stdout.write("Lutfen tam adinizi giriniz: ");
   String? kullaniciTamIsim = stdin.readLineSync()!;
 
@@ -156,4 +156,4 @@ void faturaEkrani(double toplam, String adres) {
   }
 
   stdout.write("Adresiniz $adres adres oldugu icin");
-}
+} */
