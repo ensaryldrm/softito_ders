@@ -1,4 +1,4 @@
-import 'dart:io';
+/* import 'dart:io'; */
 
 void main(List<String> args) {
   //veriIste();
@@ -6,7 +6,7 @@ void main(List<String> args) {
 
   //sayiGir();
   //sayiGir();
-  sayiIste();
+  //sayiIste();
 }
 
 /*
@@ -112,7 +112,7 @@ void sayilariYazdir(List<int> gelenListe){
 
 //kullanicidan 5 sayi alip çift ise ayrı metodda kontrol tek ise ayrı metodda kontrol edip ekrana yazdırma metoduyla ekrana yazdırsın
 //1. yol
-void sayiIste() {
+/* void sayiIste() {
   List<int> sayilar = [];
   for (int i = 1; i <= 5; i++) {
     stdout.write("$i. sayiyi giriniz: ");
@@ -136,6 +136,6 @@ void ekranaYazdir(List<int> yazdirilacakListe) {
   int sayac = 0;
   for (int yazilacakSayi in yazdirilacakListe) {
     sayac++;
-    print("Girilen çift sayilardan $sayac. sayi :$yazilacakSayi");
+    print("Girilen çift sayilardan $sayac. sayi :$yazilacakSayi ");
   }
-}
+} */
