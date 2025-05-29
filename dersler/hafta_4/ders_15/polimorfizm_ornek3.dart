@@ -22,6 +22,11 @@ void main(List<String> args) {
 
 
 }
+void listeyiYazdir(List<Departman> dep){
+  for(Departman i in dep){
+    print("${i.calisanIsim}");
+  }
+}
 
 class Departman{
   String calisanIsim = "";
@@ -42,7 +47,7 @@ class Departman{
  }
 
  void raporGonder(){
-  print("Departman raporu gonderildi...");
+  print("Departman $calisanIsim raporu gonderildi...");
  }
 }
 
@@ -60,6 +65,11 @@ class MuhasebeDepartman extends Departman{
   void telNoDegistir(String telNo){
     super.telefonNo = telNo;
   }
+
+  @override
+  void departmanaMailGonder() {
+    print("Merhaba ${super.calisanIsim} bana mali raporlari gonder");
+  }
 }
 
 class UretimDepartman extends Departman{
@@ -75,5 +85,10 @@ class UretimDepartman extends Departman{
 
   void telNoDegistir(String telNo){
     super.telefonNo = telNo;
+  }
+
+  @override
+  void departmanaMailGonder() {
+    print("Merhaba ${super.calisanIsim} bana uretim cizelgelerini gonder");
   }
 }
