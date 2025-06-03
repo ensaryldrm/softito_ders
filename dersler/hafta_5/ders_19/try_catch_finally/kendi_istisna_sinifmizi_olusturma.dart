@@ -3,14 +3,15 @@ void main(List<String> args) {
     Ogrenci ogr = Ogrenci(-6);
     print(ogr.yas);
   }
-  catch(e){
-    print(e);
+  on AgeException catch(e){
+    print(e.mesaj);
   }
 }
 
 class AgeException implements Exception{
   String mesaj = "Age Exception";
-  AgeException({mesaj});
+  AgeException({this.mesaj = 'Age Exception'});
+
 
   @override
   String toString() {
@@ -21,7 +22,7 @@ class Ogrenci{
   int yas = 0;
   Ogrenci(int yas){
     if(yas < 0){
-      print("Yas negatif olamaz!");
+      throw(AgeException());
     }
     else{
       this.yas = yas;
