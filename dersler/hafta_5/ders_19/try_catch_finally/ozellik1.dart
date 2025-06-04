@@ -1,4 +1,4 @@
-void main(List<String> args) {
+/* void main(List<String> args) {
   print("program basladi");
   try{
     int sayi = 100~/0;
@@ -20,3 +20,4 @@ void main(List<String> args) {
   print("program bitti");
 }
 
+ */
